@@ -1,0 +1,26 @@
+{
+  "name": "asset-control",
+  "version": "1.0.0",
+  "description": "Electronics asset control: register devices and employees, verify ownership by QR code or ID.",
+  "main": "server.js",
+  "scripts": {
+    "build": "esbuild src\\app.jsx --bundle --minify --outfile=public\\app.js --loader:.jsx=jsx",
+    "prestart": "npm run build",
+    "start": "node server.js",
+    "reset-admin-password": "node scripts/reset-admin-password.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "better-sqlite3": "^12.11.1",
+    "esbuild": "^0.28.2",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "html5-qrcode": "^2.3.8",
+    "qrcode": "^1.5.4",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  }
+}

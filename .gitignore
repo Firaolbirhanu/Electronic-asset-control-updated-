@@ -1,0 +1,20 @@
+
+node_modules/
+.env
+.env.*
+!.env.example
+
+# Local SQLite database and temporary files
+assets.db
+assets.db-wal
+assets.db-shm
+assets.db-journal
+
+# Database backups
+*.bak
+*.backup
+
+# Logs and operating-system files
+npm-debug.log*
+.DS_Store
+Thumbs.db
