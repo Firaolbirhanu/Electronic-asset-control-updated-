@@ -4,7 +4,7 @@
   "description": "Electronics asset control: register devices and employees, verify ownership by QR code or ID.",
   "main": "server.js",
   "scripts": {
-    "build": "esbuild src\\app.jsx --bundle --minify --outfile=public\\app.js --loader:.jsx=jsx",
+    "build": "esbuild src/app.jsx --bundle --minify --outfile=public/app.js --loader:.jsx=jsx",
     "prestart": "npm run build",
     "start": "node server.js",
     "reset-admin-password": "node scripts/reset-admin-password.js"
